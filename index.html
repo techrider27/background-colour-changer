@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
     <title>Bg Changer</title>
     <style>
       * {
@@ -35,7 +34,15 @@
   </head>
   <body>
     <button id="button">Click Me!</button>
+    <script>
+      let colors = ['yellowgreen','turquoise','teal','blue', 'yellow', 'violet', 'orange', 'green', 'red','dodgerblue','fushica','gray'];
 
-    <script src="/script.js"></script>
+let button = document.getElementById('button');
+button.addEventListener('click', function () {
+    var randomColor = colors[Math.floor(Math.random()* colors.length)] 
+    let container = document.querySelector('body');
+    container.style.background = randomColor;
+})
+    </script>
   </body>
 </html>

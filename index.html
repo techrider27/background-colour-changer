@@ -4,58 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="g1sQUlO7enB6K1UMU6UExXasWUczXceTIiDZ9XzojPM" />
+    <link rel="stylesheet" href="style.css" />
     <title>Bg Changer</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-      }
-      button {
-        padding: 10px 30px 10px 30px;
-        background: transparent;
-        font-family: cursive;
-        border: 0.5px solid grey;
-        border-radius: 2%;
-        margin: 30px 0 0 0;
-      }
-      button:hover {
-        cursor: pointer;
-        border: 1px solid aqua;
-        transition: 0.6s ease;
-      }
-    </style>
   </head>
   <body>
     <button id="button">Click Me!</button>
-    <script>
-      let colors = [
-        "yellowgreen",
-        "turquoise",
-        "teal",
-        "blue",
-        "yellow",
-        "violet",
-        "orange",
-        "green",
-        "red",
-        "dodgerblue",
-        "fuchsia",
-        "gray",
-      ];
-
-      let button = document.getElementById("button");
-      button.addEventListener("click", function () {
-        var randomColor = colors[Math.floor(Math.random() * colors.length)];
-        let container = document.querySelector("body");
-        container.style.background = randomColor;
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
